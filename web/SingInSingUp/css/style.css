@@ -1,0 +1,256 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.boxLinks {
+    width: 979px;
+    height: 40px;
+    padding: 10px 0px 5px 5px;
+}
+
+/* SiOrSu */
+
+.SiOrSu_box {
+    width: 720px;
+    height: 90px;
+    margin: 100px auto;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #EDEEF0;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+
+.SiOrSu_text{
+    margin-bottom: 10px;
+}
+
+.SiOrSu_singin, .SiOrSu_singup {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    margin: 0px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #4b4b4b 0%, #d3d3d3 51%, #ffffff 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.SiOrSu_singin, .SiOrSu_singup {
+    background-position: right center;
+}
+
+/* cm_or_pn */
+
+.cm_or_pn_box {
+    width: 720px;
+    height: 90px;
+    margin: 100px auto;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #EDEEF0;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+
+.cm_or_pn_text {
+    margin-bottom: 10px;
+}
+
+.cm_or_pn_classicMethod, .cm_or_pn_personalNumber {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    margin: 0px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #4b4b4b 0%, #d3d3d3 51%, #ffffff 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.cm_or_pn_classicMethod, .cm_or_pn_personalNumber{
+    background-position: right center;
+}
+
+/* SingUp */
+
+.SingUp_box {
+    width: 720px;
+    height: 150px;
+    margin: 100px auto 40px auto;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #EDEEF0;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+
+.SingUp_text {
+    margin-bottom: 10px;
+}
+
+.SingUp_continue {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    margin: 8px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #4b4b4b 0%, #d3d3d3 51%, #ffffff 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.SingUp_continue {
+    background-position: right center;
+}
+
+/* SingIn_cm */
+
+.SingIn_cm_box {
+    width: 720px;
+    height: 130px;
+    margin: 100px auto 60px auto;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #EDEEF0;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+
+.SingIn_cm_text {
+    margin-bottom: 10px;
+}
+
+.SingIn_cm_continue {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    margin: 8px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #4b4b4b 0%, #d3d3d3 51%, #ffffff 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.SingIn_cm_continue {
+    background-position: right center;
+}
+
+/* SignIn_pn */
+
+.SingIn_pn_box {
+    width: 500px;
+    height: 130px;
+    margin: 100px auto 60px auto;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #EDEEF0;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+
+.SingIn_pn_text {
+    margin-bottom: 10px;
+}
+
+.SingIn_pn_continue {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    margin: 8px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #4b4b4b 0%, #d3d3d3 51%, #ffffff 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.SingIn_pn_continue {
+    background-position: right center;
+}
+
+/* verificationEmail */
+
+.verificationEmail_box {
+    width: 800px;
+    height: 125px;
+    margin: 100px auto 65px auto;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #EDEEF0;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+
+.verificationEmail_text {
+    margin-bottom: 10px;
+}
+
+.verificationEmail_continue {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    margin: 8px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #4b4b4b 0%, #d3d3d3 51%, #ffffff 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.verificationEmail_continue {
+    background-position: right center;
+}
+
+/* accountUser */
+
+.accountUser_box {
+    width: 800px;
+    height: 50px;
+    margin: 100px auto 140px auto;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #EDEEF0;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 10px;
+}
+
+.accountUser_text {
+    margin-bottom: 10px;
+}

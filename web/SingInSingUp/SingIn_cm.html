@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- eel -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <!-- name -->
+    <title>app</title>
+</head>
+<body>
+    <div class="SingIn_cm_box">
+        <h2 class="SingIn_cm_text">Enter your login details.</h2>
+        <form action="#">
+            <input class="SingIn_cm_name" type="text" placeholder="name">
+            <input class="SingIn_cm_email" type="text" placeholder="email">
+            <input class="SingIn_cm_password" type="password" placeholder="password">
+            <button class="SingIn_cm_continue" type="button" onclick="location.href='accountUser.html';">continue</button>
+        </form>
+    </div>
+    <div class="boxLinks">
+        <form action="#">
+            <a href="https://github.com/Uchiha110/Si_Su_account.git" target="_blank"><img src="img/ico_github.png" width="40" height="40"></a>
+        </form>
+    </div>
+
+    <script>
+        let btn = document.querySelector(".SingIn_cm_continue");
+        btn.addEventListener("click", sendData_SingIn_cm_name);
+
+        async function sendData_SingIn_cm_name() {
+            let SingIn_cm_name = document.querySelector(".SingIn_cm_name").value;
+            
+            await eel.userName(SingIn_cm_name);
+        };
+
+        btn.addEventListener("click", sendData_SingIn_cm_email);
+
+        async function sendData_SingIn_cm_email() {
+            let SingIn_cm_email = document.querySelector(".SingIn_cm_email").value;
+            
+            await eel.userEmail(SingIn_cm_email);
+        };
+
+        btn.addEventListener("click", sendData_SingIn_cm_password);
+
+        async function sendData_SingIn_cm_password() {
+            let SingIn_cm_password = document.querySelector(".SingIn_cm_password").value;
+            
+            await eel.userPassword(SingIn_cm_password);
+        };
+
+        btn.addEventListener("click", cm_examUserDataMySql_SingInAll)
+        
+        async function cm_examUserDataMySql_SingInAll() {
+            await eel.call_message_email_SingInPN()
+            await eel.examUserDataMySql_SingInCM()
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- eel -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <!-- name -->
+    <title>app</title>
+</head>
+<body>
+    <div class="SingUp_box">
+        <h2 class="SingUp_text">Enter your details to register an account.</h2>
+        <form action="#">
+            <input class="SingUp_name" type="text" placeholder="name">
+            <input class="SingUp_email" type="text" placeholder="email">
+            <input class="SingUp_password" type="password" placeholder="password">
+            <input class="SingUp_userDay" type="text" placeholder="00">
+            <input class="SingUp_userMonth" type="text" placeholder="00">
+            <input class="SingUp_userYear" type="text" placeholder="0000">
+            <button class="SingUp_continue" type="button" onclick="location.href='verificationEmail.html';">continue</button>
+        </form>
+    </div>
+    <div class="boxLinks">
+        <form action="#">
+            <a href="https://github.com/Uchiha110/Si_Su_account.git" target="_blank"><img src="img/ico_github.png" width="40" height="40"></a>
+        </form>
+    </div>
+
+    <script>
+        let btn = document.querySelector(".SingUp_continue");
+        btn.addEventListener("click", sendData_SingUp_name);
+
+        async function sendData_SingUp_name() {
+            let SingUp_name = document.querySelector(".SingUp_name").value;
+            
+            await eel.userName(SingUp_name);
+        };
+
+        btn.addEventListener("click", sendData_SingUp_email);
+
+        async function sendData_SingUp_email() {
+            let SingUp_email = document.querySelector(".SingUp_email").value;
+            
+            await eel.userEmail(SingUp_email);
+        };
+
+        btn.addEventListener("click", sendData_SingUp_password);
+
+        async function sendData_SingUp_password() {
+            let SingUp_password = document.querySelector(".SingUp_password").value;
+            
+            await eel.userPassword(SingUp_password);
+        };
+
+        btn.addEventListener("click", sendData_SingUp_uD);
+
+        async function sendData_SingUp_uD() {
+            let SingUp_uD = document.querySelector(".SingUp_userDay").value;
+            
+            await eel.userDay(SingUp_uD);
+        };
+
+        btn.addEventListener("click", sendData_SingUp_uM);
+
+        async function sendData_SingUp_uM() {
+            let SingUp_uM = document.querySelector(".SingUp_userMonth").value;
+            
+            await eel.userMonth(SingUp_uM);
+        };
+
+        btn.addEventListener("click", sendData_SingUp_uY);
+
+        async function sendData_SingUp_uY() {
+            let SingUp_uY = document.querySelector(".SingUp_userYear").value;
+            
+            await eel.userYear(SingUp_uY);
+        };
+
+        btn.addEventListener("click", call_message_email_pn);
+
+        async function call_message_email_pn() {
+            await eel.call_message_email_SingUp();
+        };
+    </script>
+</body>
+</html>

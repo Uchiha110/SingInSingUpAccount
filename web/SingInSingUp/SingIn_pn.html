@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- eel -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <!-- name -->
+    <title>app</title>
+</head>
+<body>
+    <div class="SingIn_pn_box">
+        <h2 class="SingIn_pn_text">Enter your login details.</h2>
+        <form action="#">
+            <input class="SingIn_pn_email" type="text" placeholder="email">
+            <input class="SingIn_pn_personalNumber" type="password" placeholder="personal number">
+            <button class="SingIn_pn_continue" type="button" onclick="location.href='accountUser.html';">continue</button>
+        </form>
+    </div>
+    <div class="boxLinks">
+        <form action="#">
+            <a href="https://github.com/Uchiha110/Si_Su_account.git" target="_blank"><img src="img/ico_github.png" width="40" height="40"></a>
+        </form>
+    </div>
+
+    <script>
+        let btn = document.querySelector(".SingIn_pn_continue");
+        btn.addEventListener("click", sendData_SingIn_pn_email);
+
+        async function sendData_SingIn_pn_email() {
+            let SingIn_pn_email = document.querySelector(".SingIn_pn_email").value;
+            
+            await eel.userEmail(SingIn_pn_email);
+        };
+
+        btn.addEventListener("click", sendData_SingIn_pn_personalNumber);
+
+        async function sendData_SingIn_pn_personalNumber() {
+            let SingIn_pn_password = document.querySelector(".SingIn_pn_personalNumber").value;
+            
+            await eel.userPersonalNumber(SingIn_pn_password);
+        };
+
+        btn.addEventListener("click", pn_examUserDataMySql_SingInAll);
+
+        async function pn_examUserDataMySql_SingInAll() {
+            await eel.examUserDataMySql_SingInPN()
+            await eel.call_message_email_SingInPN ()
+        }
+
+    </script>
+</body>
+</html>
